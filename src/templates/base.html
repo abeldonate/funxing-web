@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>{% block title %}FUNxing Island{% endblock %}</title>
+</head>
+
+<body class="{% block body_class %}has-background-white-bis{% endblock %}">
+
+  <!--Header-->
+  <div class="container mt-6">
+    <div class="columns is-centered">
+      <div class="column is-half">
+
+        <div class="columns">
+          <div class="column is-two-fifths">
+            <div class="container">
+              <h1 class="title">
+                FUNxing Island
+              </h1>
+              <h2 class="subtitle">
+                A ludic journey
+              </h2>
+            </div>
+          </div>
+          <div class="column"></div>
+
+          <div class="column is-one-third">
+            <div class="columns is-mobile is-multiline is-centered">
+              <div class="column is-4">
+                <a class="button is-primary is-fullwidth" href="/">
+                  <span class="icon">
+                    <i class="fas fa-comments"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="column is-4">
+                <a class="button is-primary is-fullwidth" href="/">
+                  <span class="icon">
+                    <i class="fas fa-bell"></i>
+                  </span>
+                </a>
+              </div>
+              <div class="column is-4">
+                <a class="button is-primary is-fullwidth" href="/">
+                  <span class="icon">
+                    <i class="fas fa-user-circle" aria-hidden="true"></i>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  {% block content %}
+  {% endblock %}
+
+</body>
+</html>

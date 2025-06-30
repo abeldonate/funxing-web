@@ -1,12 +1,8 @@
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--<link rel="stylesheet" href="https://unpkg.com/bulmaswatch/default/bulmaswatch.min.css">-->
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
+{% extends "base.html" %}
 
-<body>
+{% block body_class %}{% endblock %}
 
+{% block content %}
 
 <!--Picture of the maze occupying all the page-->
   <section class="hero is-fullheight">
@@ -23,11 +19,4 @@
     </div>
   </section>
 
-
-
-
-
-
-
-
-</body>
+{% endblock %}

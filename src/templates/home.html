@@ -1,78 +1,13 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!--<link rel="stylesheet" href="https://unpkg.com/bulmaswatch/default/bulmaswatch.min.css"> -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css') }}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-
-<body class="has-background-white">
-
-  <!--Header-->
-  <section class="hero is-primary">
-    <div class="hero-body">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-half">
-
-
-            <div class="columns">
-              <div class="column is-two-fifths">
-                <div class="container">
-                  <h1 class="title">
-                    FUNxing Island
-                  </h1>
-                  <h2 class="subtitle">
-                    A ludic journey
-                  </h2>
-                </div>
-              </div>
-              <div class="column"></div>
-
-
-              <div class="column is-one-third">
-                <div class="columns is-mobile is-multiline is-centered">
-                  <div class="column is-4">
-                    <a class="button is-secondary is-fullwidth" href="/">
-                      <span class="icon">
-                        <i class="fas fa-comments"></i>
-                      </span>
-                    </a>
-                  </div>
-                  <div class="column is-4">
-                    <a class="button is-secondary is-fullwidth" href="/">
-                      <span class="icon">
-                        <i class="fas fa-bell"></i>
-                      </span>
-                    </a>
-                  </div>
-                  <div class="column is-4">
-                    <a class="button is-secondary is-fullwidth" href="/">
-                      <span class="icon">
-                        <i class="fas fa-user-circle" aria-hidden="true"></i>
-                      </span>
-                    </a>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
+{% block content %}
 
   <!-- Dashboard-->
   <section class="section">
     <div class="container">
       <div class="columns is-centered">
         <div class="column is-half">
-          <div class="box has-background-info-light">
+          <div class="box has-background-info">
             <h2 class="title is-4 has-text-info-dark">
               <span class="icon-text">
                 <span class="icon">
@@ -245,7 +180,7 @@
           <div class="columns is-multiline">
             <!-- Post 1 -->
             <div class="column is-full">
-              <div class="box">
+              <div class="box has-background-info">
                 <article class="media">
                   <figure class="media-left">
                     <i class="fa fa-user-circle" aria-hidden="true"></i>
@@ -266,9 +201,8 @@
 
                       <div class="column is-9">
                         <div class="content">
-                          <p>
-                            <strong>Lot of fun in the maze today!</strong>
-                            <br>
+                          <p class="title is-6 has-text-black">Lot of fun in the maze today</p>
+                          <p class="subtitle is-6 has-text-black">
                             Today I completed the maze challenge, it was amazing! Also, I played some of the games
                             located
                             in the plaza.
@@ -416,4 +350,4 @@
     </div>
   </footer>
 
-</body>
+{% endblock %}

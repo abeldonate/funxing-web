@@ -8,8 +8,8 @@ $beige-lighter: #eff0eb;
 $blue: #84ACCE;
 $blue-light: #B7D4E8;
 
-$text: #4A4A4A;
-$box: #F5F5F5;
+$text: #242424;
+$box: #F3F3F3;
 
 
 // Path to Bulma's sass folder
@@ -20,12 +20,14 @@ $box: #F5F5F5;
   $grey-light: $beige-light,
   
   $text: $text,
+  $text-weak: $text,
+  $text-strong: $text,
   $primary: $purple,
   $success: $blue,
   $link: $pink,
   $control-border-width: 2px,
   $input-shadow: none,
-  $info-light: $box,
+  $info: $box,
 
   $background: $beige-lighter,
   $pre-background: $beige-light,
