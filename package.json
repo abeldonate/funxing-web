@@ -1,0 +1,17 @@
+{
+  "name": "funxing-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-bulma": "sass --load-path=node_modules custom.scss src/static/css/custom.css",
+    "start": "npm run build-bulma -- --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bulma": "^1.0.4",
+    "sass": "^1.89.2"
+  }
+}
