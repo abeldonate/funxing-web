@@ -1,248 +1,190 @@
 {% extends "base.html" %}
 
 {% block content %}
-    </div>
-  </section>
 
+<!-- The Maze-->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half-desktop is-three-quarters-tablet is-full-mobile">
+        <div class="box has-background-info">
 
-
-
-  <!-- The Maze-->
-  <section class="section">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-half">
-          <div class="box has-background-info">
-
-            <h2 class="title is-4 has-text-info-dark">
-              <span class="icon-text">
-                <span class="icon">
-                  <i class="fas fa-tachometer-alt"></i>
-                </span>
-                <span>The Maze</span>
+          <h2 class="title is-4 has-text-info-dark">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fas fa-tachometer-alt"></i>
               </span>
-            </h2>
+              <span>The Maze</span>
+            </span>
+          </h2>
 
+          <div class="columns is-mobile is-multiline">
 
-            <div class="columns is-mobile is-multiline">
-
-              <!-- Maze locked-->
-              <div class="column is-5-desktop is-half-mobile">
-                <div class="box has-background-info">
-                  <a href="/maze" class="is-block">
-                    <figure class="image is-fullwidth">
-                      <img src="{{ url_for('static', filename='blured_maze2.jpeg') }}" alt="Play Today">
-                    </figure>
-                  </a>
-                </div>
-              </div>
-
-              <!-- Badge of today-->
-              <div class="column is-3-desktop is-half-mobile">
-                <div class="box has-background-info">
-                  <div class="has-text-centered">
-                    <figure class="image">
-                      <img class="is-rounded is-fullwidth" src="{{ url_for('static', filename='badge1.png') }}"
-                        alt="Badge">
-                      <p class="subtitle is-6 mt-2 has-text-black">Today's Challenge:</p>
-                      <p class="subtitle is-6 has-text-weight-bold has-text-black"> The labyrinth of the wild</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="column is-4-desktop is-half-mobile">
-                <div class="box has-background-info">
-                  <div class="has-text-centered">
-                    <figure class="image">
-                      <img src="{{ url_for('static', filename='june_modified.png') }}" alt="Calendar" class="is-fullwidth">
-                    </figure>
-                    <p class="subtitle is-6 mt-2 has-text-black">Your Progress</p>
-                  </div>
-                </div>
-
-
-
-              </div>
-
-
-            </div>
-          </div>
-        </div>
-  </section>
-
-
-
-  <!-- The Games-->
-  <section class="section">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-half">
-          <div class="box has-background-info">
-
-            <h2 class="title is-4 has-text-info-dark">
-              <span class="icon-text">
-                <span class="icon">
-                  <i class="fas fa-chess"></i>
-                </span>
-                <span>The Games</span>
-              </span>
-            </h2>
-
-
-            <div class="columns is-mobile is-multiline">
-
-              <div class="column is-4-desktop is-half-mobile">
-                <div class="box has-background-white has-text-centered">
+            <!-- Maze locked-->
+            <div class="column is-half-mobile is-5-tablet">
+              <div class="box has-background-info">
+                <a href="/maze" class="is-block">
                   <figure class="image is-fullwidth">
-                    <p class="subtitle is-6 has-text-weight-bold has-text-black">Connections</p>
-                    <img src="{{ url_for('static', filename='connections.jpeg') }}" alt="Play Today">
+                    <img src="{{ url_for('static', filename='blured_maze2.jpeg') }}" alt="Play Today">
                   </figure>
+                </a>
+              </div>
+            </div>
+
+            <!-- Badge of today-->
+            <div class="column is-half-mobile is-3-tablet">
+              <div class="box has-background-info">
+                <div class="has-text-centered">
+                  <figure class="image">
+                    <img class="is-rounded is-fullwidth" src="{{ url_for('static', filename='badge1.png') }}"
+                      alt="Badge">
+                    <p class="subtitle is-7 mt-1 has-text-black">Today's Challenge:</p>
+                    <p class="subtitle is-7 has-text-weight-bold has-text-black"> The labyrinth of the wild</p>
                 </div>
               </div>
+            </div>
 
-
-              <div class="column is-4-desktop is-half-mobile">
-                <div class="box has-background-white has-text-centered">
-                  <figure class="image is-fullwidth">
-                    <p class="subtitle is-6 has-text-weight-bold has-text-black">Draw the Hanzi</p>
-                    <img src="{{ url_for('static', filename='draw.png') }}" alt="Play Today">
+            <div class="column is-full-mobile is-4-tablet">
+              <div class="box has-background-info">
+                <div class="has-text-centered">
+                  <figure class="image">
+                    <img src="{{ url_for('static', filename='june_modified.png') }}" alt="Calendar"
+                      class="is-fullwidth">
                   </figure>
+                  <p class="subtitle is-7 mt-1 has-text-black">Your Progress</p>
                 </div>
               </div>
-
-
-              <div class="column is-4-desktop is-half-mobile">
-                <div class="box has-background-white has-text-centered">
-                  <figure class="image is-fullwidth">
-                    <p class="subtitle is-6 has-text-weight-bold has-text-black">Perfect Square</p>
-                    <img src="{{ url_for('static', filename='perfect_square.png') }}" alt="Play Today">
-                  </figure>
-                </div>
-              </div>
-
-
-
             </div>
-          </div>
-        </div>
-  </section>
 
-
-  <!-- Now a section for Virtual reality tour-->
-  <section class="section">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-half">
-          <div class="box has-background-info">
-
-            <h2 class="title is-4 has-text-info-dark">
-              <span class="icon-text">
-                <span class="icon">
-                  <i class="fas fa-gamepad"></i>
-                </span>
-                <span>VR Tour to the Past</span>
-              </span>
-            </h2>
-
-          </div>
-        </div>
-      </div>
-  </section>
-
-
-
-  <!-- Now a section for food delivery-->
-  <section class="section">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-half">
-          <div class="box has-background-info">
-
-            <h2 class="title is-4 has-text-info-dark">
-              <span class="icon-text">
-                <span class="icon">
-                  <i class="fas fa-utensils"></i>
-                </span>
-                <span>Food Delivery</span>
-              </span>
-            </h2>
-
-            <div class="columns is-mobile is-multiline">
-
-              <div class="column is-4-desktop is-half-mobile">
-                <div class="box has-background-white has-text-centered">
-                  <figure class="image is-fullwidth">
-                    <p class="subtitle is-6 has-text-weight-bold">Order Now</p>
-                  </figure>
-                </div>
-              </div>
-
-              <div class="column is-4-desktop is-half-mobile">
-                <div class="box has-background-white has-text-centered">
-                  <figure class="image is-fullwidth">
-                    <p class="subtitle is-6 has-text-weight-bold">Your Orders</p>
-                  </figure>
-                </div>
-              </div>
-
-              <div class="column is-4-desktop is-half-mobile">
-                <div class="box has-background-white has-text-centered">
-                  <figure class="image is-fullwidth">
-                    <p class="subtitle is-6 has-text-weight-bold">Delivery Status</p>
-                  </figure>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
-
-
-
-
-
-
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-half">
-          <div class="columns is-mobile is-multiline is-centered">
-            <div class="column is-3">
-              <a class="button is-secondary is-fullwidth" href="/">
-                <span class="icon">
-                  <i class="fas fa-comments"></i> Home
-                </span>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a class="button is-secondary is-fullwidth" href="/activities">
-                <span class="icon">
-                  <i class="fas fa-bell"></i> Activities
-                </span>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a class="button is-secondary is-fullwidth" href="/">
-                <span class="icon">
-                  <i class="fa fa-chevron-up" aria-hidden="true"></i> Public events
-                </span>
-              </a>
-            </div>
-            <div class="column is-3">
-              <a class="button is-secondary is-fullwidth" href="/">
-                <span class="icon">
-                  <i class="fas fa-user-circle" aria-hidden="true"></i> Profile
-                </span>
-              </a>
-            </div>
           </div>
         </div>
       </div>
     </div>
-  </footer>
+</section>
+
+
+
+<!-- The Games-->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half-desktop is-three-quarters-tablet is-full-mobile">
+        <div class="box has-background-info">
+
+          <h2 class="title is-4 has-text-info-dark">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fas fa-chess"></i>
+              </span>
+              <span>The Games</span>
+            </span>
+          </h2>
+
+          <div class="columns is-mobile is-multiline">
+
+            <div class="column is-4-desktop is-half-mobile is-4-tablet">
+              <div class="box has-background-white has-text-centered">
+                <figure class="image is-fullwidth">
+                  <p class="subtitle is-7 has-text-weight-bold has-text-black">Connections</p>
+                  <img src="{{ url_for('static', filename='connections.jpeg') }}" alt="Play Today">
+                </figure>
+              </div>
+            </div>
+
+
+            <div class="column is-4-desktop is-half-mobile">
+              <div class="box has-background-white has-text-centered">
+                <figure class="image is-fullwidth">
+                  <p class="subtitle is-7 has-text-weight-bold has-text-black">Draw the Hanzi</p>
+                  <img src="{{ url_for('static', filename='draw.png') }}" alt="Play Today">
+                </figure>
+              </div>
+            </div>
+
+            <div class="column is-4-desktop is-half-mobile is-4-tablet">
+              <div class="box has-background-white has-text-centered">
+                <figure class="image is-fullwidth">
+                  <p class="subtitle is-7 has-text-weight-bold has-text-black">Perfect Square</p>
+                  <img src="{{ url_for('static', filename='perfect_square.png') }}" alt="Play Today">
+                </figure>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Now a section for Virtual reality tour-->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half-desktop is-three-quarters-tablet is-full-mobile">
+        <div class="box has-background-info">
+
+          <h2 class="title is-4 has-text-info-dark">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fas fa-gamepad"></i>
+              </span>
+              <span>VR Tour to the Past</span>
+            </span>
+          </h2>
+
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+<!-- Now a section for food delivery-->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half-desktop is-three-quarters-tablet is-full-mobile">
+        <div class="box has-background-info">
+
+          <h2 class="title is-4 has-text-info-dark">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fas fa-utensils"></i>
+              </span>
+              <span>Food Delivery</span>
+            </span>
+          </h2>
+
+          <div class="columns is-mobile is-multiline">
+
+            <div class="column is-half-mobile is-4-tablet">
+              <div class="box has-background-white has-text-centered">
+                <figure class="image is-fullwidth">
+                  <p class="subtitle is-6 has-text-weight-bold">Order Now</p>
+                </figure>
+              </div>
+            </div>
+
+            <div class="column is-4-desktop is-half-mobile">
+              <div class="box has-background-white has-text-centered">
+                <figure class="image is-fullwidth">
+                  <p class="subtitle is-6 has-text-weight-bold">Your Orders</p>
+                </figure>
+              </div>
+            </div>
+
+            <div class="column is-4-desktop is-half-mobile">
+              <div class="box has-background-white has-text-centered">
+                <figure class="image is-fullwidth">
+                  <p class="subtitle is-6 has-text-weight-bold">Delivery Status</p>
+                </figure>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
 
 {% endblock %}

@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!-- Amphitheater Schedule -->
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-half-desktop is-three-quarters-tablet is-full-mobile">
+        <div class="box has-background-info">
+
+          <h2 class="title is-4 has-text-info-dark">
+            <span class="icon-text">
+              <span class="icon">
+                <i class="fas fa-tachometer-alt"></i>
+              </span>
+              <span>Amphitheater Schedule</span>
+            </span>
+          </h2>
+
+          <div class="columns is-mobile is-multiline">
+
+            <!-- Maze locked-->
+            <div class="column is-half-mobile is-5-tablet">
+              <div class="box has-background-info">
+                <a href="/maze" class="is-block">
+                  <figure class="image is-fullwidth">
+                    <img src="{{ url_for('static', filename='amphitheater.jpg') }}" alt="Play Today">
+                  </figure>
+                </a>
+              </div>
+            </div>
+
+            <!-- Scheduled Events -->
+            <div class="column is-half-mobile is-7-tablet">
+              <div class="box has-background-white">
+                <div class="content">
+                  <h3 class="title is-5 has-text-black">Upcoming Events</h3>
+                  <ul class="has-text-black">
+                    <li><strong>Fri 6 Jun:</strong> Karaoke</li>
+                    <li><strong>Sat 7 Jun:</strong> Live Jazz Band</li>
+                    <li><strong>Sun 8 Jun:</strong> Poetry Night</li>
+                    <li><strong>Mon 9 Jun:</strong> Comedy Show</li>
+                    <li><strong>Tue 10 Jun:</strong> Acoustic Session</li>
+                    <li><strong>Wed 11 Jun:</strong> Dance Performance</li>
+                    <li><strong>Thu 12 Jun:</strong> Open Mic Night</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+</section>
+
+
+
+
+{% endblock %}
