@@ -11,20 +11,22 @@
 <body class="{% block body_class %}has-background-white-bis{% endblock %}">
 
     <!--Header-->
-    <section class="section">
+    <section class="section pb-1">
         <div class="container">
             <div class="columns is-centered">
                 <div class="column is-half-desktop is-three-quarters-tablet is-full-mobile">
 
                     <div class="columns is-mobile is-multiline">
 
-                        <div class="column is-half-desktop is-half-mobile is-5-tablet">
+                        <div class="column is-3-desktop is-4-mobile is-3-tablet">
                             <a href="/maze" class="is-block">
                                 <figure class="image is-fullwidth">
-                                    <img src="{{ url_for('static', filename='amphitheater.jpg') }}" alt="Play Today"
-                                        class="is-rounded">
+                                    <img src="{{ url_for('static', filename='logo.png') }}" alt="Play Today">
                                 </figure>
                             </a>
+                        </div>
+
+                        <div class="column is-3-desktop is-2-mobile is-3-tablet">
                         </div>
 
                         <!-- Buttons -->
